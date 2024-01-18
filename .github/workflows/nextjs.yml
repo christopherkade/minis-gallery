@@ -76,7 +76,7 @@ jobs:
       - name: Create env file
         run: |
           touch .env.local
-          echo NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=${{ secrets.NEXT_PUBLIC_FB_CLIENT_API_KEY }} >> .env.local
+          echo NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=${{ secrets.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME }} >> .env.local
           echo CLOUDINARY_API_KEY=${{ secrets.CLOUDINARY_API_KEY }} >> .env.local
           echo CLOUDINARY_API_SECRET=${{ secrets.CLOUDINARY_API_SECRET }} >> .env.local
       - name: Build with Next.js
