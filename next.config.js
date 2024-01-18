@@ -1,4 +1,5 @@
 module.exports = {
+  output: "export",
   images: {
     formats: ["image/avif", "image/webp"],
     domains: ["res.cloudinary.com"],
